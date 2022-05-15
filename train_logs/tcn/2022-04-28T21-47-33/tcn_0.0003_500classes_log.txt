@@ -1,0 +1,5 @@
+----------
+Epoch 0/79
+Current learning rate: 0.0003
+[   32/  300 (0%)]	Loss: 9.5152	Acc:0.0000	Cost time:42.941 (42.941)s	Data time:30.477 (30.477)	Instances per second: 0.75
+[  300/  300 (100%)]	Loss: 5.0389	Acc:0.1748	Cost time:2.930 (5.267)s	Data time:0.000 (3.051)	Instances per second: 6.08

@@ -1,0 +1,4 @@
+Model has been successfully loaded from ./models/lrw_resnet18_mstcn.pth.tar
+----------
+Epoch 0/79
+Current learning rate: 0.0003

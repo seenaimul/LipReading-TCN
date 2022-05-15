@@ -1,0 +1,84 @@
+Model has been successfully loaded from ./models/lrw_resnet18_mstcn.pth.tar
+----------
+Epoch 0/0
+Current learning rate: 0.0003
+[   32/121647 (0%)]	Loss: 2.5352	Acc:0.4980	Cost time:54.940 (54.940)s	Data time:42.119 (42.119)	Instances per second: 0.58
+[ 1632/121647 (1%)]	Loss: 1.5801	Acc:0.7100	Cost time:0.546 (1.774)s	Data time:0.001 (0.828)	Instances per second: 18.04
+[ 3232/121647 (3%)]	Loss: 1.4631	Acc:0.7234	Cost time:0.608 (1.181)s	Data time:0.004 (0.420)	Instances per second: 27.09
+[ 4832/121647 (4%)]	Loss: 1.5368	Acc:0.7011	Cost time:0.545 (0.980)s	Data time:0.010 (0.282)	Instances per second: 32.64
+[ 6432/121647 (5%)]	Loss: 1.5357	Acc:0.6994	Cost time:0.526 (0.890)s	Data time:0.000 (0.213)	Instances per second: 35.97
+[ 8032/121647 (7%)]	Loss: 1.5405	Acc:0.6992	Cost time:0.557 (0.825)s	Data time:0.000 (0.171)	Instances per second: 38.77
+[ 9632/121647 (8%)]	Loss: 1.5175	Acc:0.7019	Cost time:0.573 (0.786)s	Data time:0.000 (0.143)	Instances per second: 40.69
+[11232/121647 (9%)]	Loss: 1.5154	Acc:0.7041	Cost time:0.553 (0.754)s	Data time:0.007 (0.123)	Instances per second: 42.46
+[12832/121647 (11%)]	Loss: 1.5294	Acc:0.6996	Cost time:0.549 (0.729)s	Data time:0.000 (0.108)	Instances per second: 43.88
+[14432/121647 (12%)]	Loss: 1.5168	Acc:0.7019	Cost time:0.595 (0.710)s	Data time:0.025 (0.096)	Instances per second: 45.06
+[16032/121647 (13%)]	Loss: 1.5067	Acc:0.7022	Cost time:0.590 (0.695)s	Data time:0.002 (0.087)	Instances per second: 46.02
+[17632/121647 (14%)]	Loss: 1.5072	Acc:0.7018	Cost time:0.573 (0.684)s	Data time:0.004 (0.080)	Instances per second: 46.75
+[19232/121647 (16%)]	Loss: 1.5157	Acc:0.6994	Cost time:0.592 (0.675)s	Data time:0.010 (0.073)	Instances per second: 47.41
+[20832/121647 (17%)]	Loss: 1.5039	Acc:0.7015	Cost time:0.592 (0.666)s	Data time:0.000 (0.068)	Instances per second: 48.02
+[22432/121647 (18%)]	Loss: 1.5129	Acc:0.6992	Cost time:0.590 (0.659)s	Data time:0.000 (0.063)	Instances per second: 48.54
+[24032/121647 (20%)]	Loss: 1.5152	Acc:0.6983	Cost time:0.560 (0.652)s	Data time:0.000 (0.059)	Instances per second: 49.05
+[25632/121647 (21%)]	Loss: 1.5293	Acc:0.6946	Cost time:0.609 (0.649)s	Data time:0.000 (0.056)	Instances per second: 49.34
+[27232/121647 (22%)]	Loss: 1.5296	Acc:0.6947	Cost time:0.582 (0.646)s	Data time:0.010 (0.053)	Instances per second: 49.55
+[28832/121647 (24%)]	Loss: 1.5398	Acc:0.6927	Cost time:0.541 (0.643)s	Data time:0.000 (0.050)	Instances per second: 49.79
+[30432/121647 (25%)]	Loss: 1.5460	Acc:0.6917	Cost time:0.574 (0.640)s	Data time:0.000 (0.048)	Instances per second: 49.99
+[32032/121647 (26%)]	Loss: 1.5520	Acc:0.6903	Cost time:0.567 (0.637)s	Data time:0.010 (0.045)	Instances per second: 50.22
+[33632/121647 (28%)]	Loss: 1.5494	Acc:0.6911	Cost time:0.560 (0.635)s	Data time:0.010 (0.043)	Instances per second: 50.39
+[35232/121647 (29%)]	Loss: 1.5510	Acc:0.6904	Cost time:0.552 (0.633)s	Data time:0.000 (0.042)	Instances per second: 50.58
+[36832/121647 (30%)]	Loss: 1.5475	Acc:0.6920	Cost time:0.570 (0.631)s	Data time:0.010 (0.040)	Instances per second: 50.70
+[38432/121647 (32%)]	Loss: 1.5501	Acc:0.6910	Cost time:0.611 (0.630)s	Data time:0.004 (0.038)	Instances per second: 50.77
+[40032/121647 (33%)]	Loss: 1.5492	Acc:0.6910	Cost time:0.563 (0.628)s	Data time:0.000 (0.037)	Instances per second: 50.97
+[41632/121647 (34%)]	Loss: 1.5447	Acc:0.6919	Cost time:0.560 (0.625)s	Data time:0.000 (0.036)	Instances per second: 51.17
+[43232/121647 (36%)]	Loss: 1.5431	Acc:0.6920	Cost time:0.553 (0.623)s	Data time:0.010 (0.034)	Instances per second: 51.34
+[44832/121647 (37%)]	Loss: 1.5456	Acc:0.6917	Cost time:0.530 (0.621)s	Data time:0.002 (0.033)	Instances per second: 51.51
+[46432/121647 (38%)]	Loss: 1.5514	Acc:0.6903	Cost time:0.570 (0.620)s	Data time:0.000 (0.032)	Instances per second: 51.61
+[48032/121647 (39%)]	Loss: 1.5575	Acc:0.6890	Cost time:0.558 (0.618)s	Data time:0.000 (0.031)	Instances per second: 51.76
+[49632/121647 (41%)]	Loss: 1.5516	Acc:0.6900	Cost time:0.521 (0.617)s	Data time:0.000 (0.030)	Instances per second: 51.88
+[51232/121647 (42%)]	Loss: 1.5494	Acc:0.6904	Cost time:0.537 (0.615)s	Data time:0.000 (0.030)	Instances per second: 52.00
+[52832/121647 (43%)]	Loss: 1.5560	Acc:0.6888	Cost time:0.601 (0.614)s	Data time:0.000 (0.029)	Instances per second: 52.11
+[54432/121647 (45%)]	Loss: 1.5538	Acc:0.6889	Cost time:0.620 (0.613)s	Data time:0.010 (0.028)	Instances per second: 52.21
+[56032/121647 (46%)]	Loss: 1.5517	Acc:0.6896	Cost time:0.626 (0.612)s	Data time:0.000 (0.027)	Instances per second: 52.29
+[57632/121647 (47%)]	Loss: 1.5511	Acc:0.6893	Cost time:0.597 (0.612)s	Data time:0.010 (0.027)	Instances per second: 52.31
+[59232/121647 (49%)]	Loss: 1.5536	Acc:0.6887	Cost time:0.638 (0.611)s	Data time:0.000 (0.026)	Instances per second: 52.34
+[60832/121647 (50%)]	Loss: 1.5486	Acc:0.6891	Cost time:0.639 (0.611)s	Data time:0.000 (0.025)	Instances per second: 52.35
+[62432/121647 (51%)]	Loss: 1.5496	Acc:0.6888	Cost time:0.571 (0.611)s	Data time:0.000 (0.025)	Instances per second: 52.37
+[64032/121647 (53%)]	Loss: 1.5485	Acc:0.6893	Cost time:0.641 (0.611)s	Data time:0.000 (0.024)	Instances per second: 52.39
+[65632/121647 (54%)]	Loss: 1.5472	Acc:0.6896	Cost time:0.580 (0.611)s	Data time:0.010 (0.024)	Instances per second: 52.41
+[67232/121647 (55%)]	Loss: 1.5473	Acc:0.6896	Cost time:0.653 (0.611)s	Data time:0.001 (0.023)	Instances per second: 52.40
+[68832/121647 (57%)]	Loss: 1.5446	Acc:0.6898	Cost time:0.591 (0.611)s	Data time:0.000 (0.023)	Instances per second: 52.41
+[70432/121647 (58%)]	Loss: 1.5440	Acc:0.6898	Cost time:0.558 (0.611)s	Data time:0.000 (0.022)	Instances per second: 52.39
+[72032/121647 (59%)]	Loss: 1.5495	Acc:0.6886	Cost time:0.608 (0.611)s	Data time:0.000 (0.022)	Instances per second: 52.41
+[73632/121647 (61%)]	Loss: 1.5517	Acc:0.6875	Cost time:0.598 (0.610)s	Data time:0.000 (0.022)	Instances per second: 52.42
+[75232/121647 (62%)]	Loss: 1.5555	Acc:0.6869	Cost time:0.571 (0.610)s	Data time:0.000 (0.021)	Instances per second: 52.43
+[76832/121647 (63%)]	Loss: 1.5544	Acc:0.6869	Cost time:0.646 (0.610)s	Data time:0.000 (0.021)	Instances per second: 52.44
+[78432/121647 (64%)]	Loss: 1.5537	Acc:0.6868	Cost time:0.629 (0.611)s	Data time:0.010 (0.020)	Instances per second: 52.35
+[80032/121647 (66%)]	Loss: 1.5536	Acc:0.6871	Cost time:0.560 (0.611)s	Data time:0.010 (0.020)	Instances per second: 52.39
+[81632/121647 (67%)]	Loss: 1.5532	Acc:0.6871	Cost time:0.513 (0.610)s	Data time:0.000 (0.020)	Instances per second: 52.46
+[83232/121647 (68%)]	Loss: 1.5519	Acc:0.6874	Cost time:0.584 (0.610)s	Data time:0.000 (0.019)	Instances per second: 52.48
+[84832/121647 (70%)]	Loss: 1.5511	Acc:0.6874	Cost time:0.481 (0.609)s	Data time:0.000 (0.019)	Instances per second: 52.55
+[86432/121647 (71%)]	Loss: 1.5549	Acc:0.6866	Cost time:0.599 (0.608)s	Data time:0.000 (0.019)	Instances per second: 52.62
+[88032/121647 (72%)]	Loss: 1.5523	Acc:0.6870	Cost time:0.542 (0.607)s	Data time:0.000 (0.019)	Instances per second: 52.69
+[89632/121647 (74%)]	Loss: 1.5516	Acc:0.6870	Cost time:0.559 (0.607)s	Data time:0.000 (0.018)	Instances per second: 52.73
+[91232/121647 (75%)]	Loss: 1.5518	Acc:0.6871	Cost time:0.533 (0.607)s	Data time:0.000 (0.018)	Instances per second: 52.76
+[92832/121647 (76%)]	Loss: 1.5491	Acc:0.6878	Cost time:0.620 (0.606)s	Data time:0.000 (0.018)	Instances per second: 52.78
+[94432/121647 (78%)]	Loss: 1.5506	Acc:0.6874	Cost time:0.586 (0.606)s	Data time:0.010 (0.017)	Instances per second: 52.82
+[96032/121647 (79%)]	Loss: 1.5494	Acc:0.6876	Cost time:0.621 (0.605)s	Data time:0.004 (0.017)	Instances per second: 52.86
+[97632/121647 (80%)]	Loss: 1.5477	Acc:0.6881	Cost time:0.610 (0.605)s	Data time:0.010 (0.017)	Instances per second: 52.89
+[99232/121647 (82%)]	Loss: 1.5500	Acc:0.6877	Cost time:0.610 (0.605)s	Data time:0.000 (0.017)	Instances per second: 52.92
+[100832/121647 (83%)]	Loss: 1.5489	Acc:0.6879	Cost time:0.569 (0.604)s	Data time:0.000 (0.017)	Instances per second: 52.94
+[102432/121647 (84%)]	Loss: 1.5484	Acc:0.6880	Cost time:0.682 (0.604)s	Data time:0.010 (0.016)	Instances per second: 52.96
+[104032/121647 (86%)]	Loss: 1.5477	Acc:0.6881	Cost time:0.609 (0.604)s	Data time:0.000 (0.016)	Instances per second: 52.98
+[105632/121647 (87%)]	Loss: 1.5474	Acc:0.6882	Cost time:0.550 (0.604)s	Data time:0.000 (0.016)	Instances per second: 53.00
+[107232/121647 (88%)]	Loss: 1.5477	Acc:0.6881	Cost time:0.651 (0.604)s	Data time:0.000 (0.016)	Instances per second: 53.01
+[108832/121647 (89%)]	Loss: 1.5483	Acc:0.6877	Cost time:0.604 (0.603)s	Data time:0.000 (0.016)	Instances per second: 53.04
+[110432/121647 (91%)]	Loss: 1.5484	Acc:0.6874	Cost time:0.563 (0.603)s	Data time:0.000 (0.015)	Instances per second: 53.07
+[112032/121647 (92%)]	Loss: 1.5489	Acc:0.6872	Cost time:0.560 (0.603)s	Data time:0.000 (0.015)	Instances per second: 53.08
+[113632/121647 (93%)]	Loss: 1.5478	Acc:0.6876	Cost time:0.531 (0.603)s	Data time:0.000 (0.015)	Instances per second: 53.11
+[115232/121647 (95%)]	Loss: 1.5459	Acc:0.6877	Cost time:0.587 (0.608)s	Data time:0.000 (0.021)	Instances per second: 52.59
+[116832/121647 (96%)]	Loss: 1.5443	Acc:0.6881	Cost time:0.540 (0.608)s	Data time:0.000 (0.021)	Instances per second: 52.65
+[118432/121647 (97%)]	Loss: 1.5432	Acc:0.6882	Cost time:0.551 (0.607)s	Data time:0.000 (0.021)	Instances per second: 52.71
+[120032/121647 (99%)]	Loss: 1.5438	Acc:0.6880	Cost time:0.510 (0.606)s	Data time:0.010 (0.020)	Instances per second: 52.77
+[121632/121647 (100%)]	Loss: 1.5435	Acc:0.6879	Cost time:0.500 (0.606)s	Data time:0.000 (0.020)	Instances per second: 52.82
+[121647/121647 (100%)]	Loss: 1.5433	Acc:0.6879	Cost time:1.490 (0.606)s	Data time:0.000 (0.020)	Instances per second: 52.80
+val Epoch:	 0	Loss val: 0.4957	Acc val:0.8745, LR: 0.0003
+Test time performance of best epoch: 0.8658064516129033 (loss: 0.524648592510531)

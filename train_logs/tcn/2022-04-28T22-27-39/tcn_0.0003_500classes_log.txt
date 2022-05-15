@@ -1,0 +1,2 @@
+Model has been successfully loaded from ./models/lrw_resnet18_mstcn.pth.tar
+Test-time performance on partition test: Loss: 0.3813	Acc:0.8933

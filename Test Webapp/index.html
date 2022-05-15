@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <p>Click the "Start Recording" button to begin video recording for a few seconds. You can stop
+        recording by clicking the "Stop Recording" button. The "Download"
+        button will download the received data (although it's in a raw, unwrapped form
+        that isn't very useful).
+    </p> -->
+    <br>
+
+    <div class="left">
+
+        <h2>Preview</h2>
+        <video id="preview" width="160" height="120" autoplay muted></video>
+<div style="padding: 1px;">
+    <div id="startButton" class="button" style="width: 70px;">
+        Start
+    </div>
+    <div id="stopButton" class="button" style="width: 70px;">
+        Stop
+    </div>
+</div>
+    </div>
+
+    <div class="right">
+
+        <h2>Recording</h2>
+        <video id="recording" width="160" height="120" controls></video>
+        <a id="downloadButton" class="button" style="width: 160px;">
+            Download
+        </a>
+    </div>
+
+    <div class="bottom">
+        <pre id="log"></pre>
+    </div>
+
+
+    <script>
+        let preview = document.getElementById("preview");
+        let recording = document.getElementById("recording");
+        let startButton = document.getElementById("startButton");
+        let stopButton = document.getElementById("stopButton");
+        let downloadButton = document.getElementById("downloadButton");
+        let logElement = document.getElementById("log");
+
+        let recordingTimeMS = 5000;
+
+        function log(msg) {
+            logElement.innerHTML += msg + "\n";
+        }
+
+        function wait(delayInMS) {
+            return new Promise(resolve => setTimeout(resolve, delayInMS));
+        }
+
+        function startRecording(stream, lengthInMS) {
+            let recorder = new MediaRecorder(stream);
+            let data = [];
+
+            recorder.ondataavailable = event => data.push(event.data);
+            recorder.start();
+            log(recorder.state + " for " + (lengthInMS / 1000) + " seconds...");
+
+            let stopped = new Promise((resolve, reject) => {
+                recorder.onstop = resolve;
+                recorder.onerror = event => reject(event.name);
+            });
+
+            let recorded = wait(lengthInMS).then(
+                () => recorder.state == "recording" && recorder.stop()
+            );
+
+            return Promise.all([
+                stopped,
+                recorded
+            ])
+                .then(() => data);
+        }
+
+        function stop(stream) {
+            stream.getTracks().forEach(track => track.stop());
+        }
+
+        startButton.addEventListener("click", function () {
+            navigator.mediaDevices.getUserMedia({
+                video: true,
+                audio: true
+            }).then(stream => {
+                preview.srcObject = stream;
+                downloadButton.href = stream;
+                preview.captureStream = preview.captureStream || preview.mozCaptureStream;
+                return new Promise(resolve => preview.onplaying = resolve);
+            }).then(() => startRecording(preview.captureStream(), recordingTimeMS))
+                .then(recordedChunks => {
+                    let recordedBlob = new Blob(recordedChunks, { type: "video/webm" });
+                    recording.src = URL.createObjectURL(recordedBlob);
+                    downloadButton.href = recording.src;
+                    <!--path = "C:\Users\naimu\Desktop\TCN-csdntest"-->
+                    downloadButton.download = "RecordedVideo.webm";
+
+                    log("Successfully recorded " + recordedBlob.size + " bytes of " +
+                        recordedBlob.type + " media.");
+                })
+                .catch((error) => {
+                    if (error.name === "NotFoundError") {
+                        log("Camera or microphone not found. Can’t record.");
+                    } else {
+                        log(error);
+                    }
+                });
+        }, false);
+
+        stopButton.addEventListener("click", function () {
+            stop(preview.srcObject);
+        }, false);
+
+    </script>
+
+    <script>mendeleyWebImporter = {
+            downloadPdfs(e, t) { return this._call('downloadPdfs', [e, t]); },
+            open() { return this._call('open', []); },
+            setLoginToken(e) { return this._call('setLoginToken', [e]); },
+            _call(methodName, methodArgs) {
+                const id = Math.random();
+                window.postMessage({ id, token: '0.4259646264748205', methodName, methodArgs }, 'https://yari-demos.prod.mdn.mozit.cloud');
+                return new Promise(resolve => {
+                    const listener = window.addEventListener('message', event => {
+                        const data = event.data;
+                        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+                        window.removeEventListener('message', listener);
+                        resolve(data.result);
+                    });
+                });
+            }
+        };</script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+Model has been successfully loaded from ./models/lrw_resnet18_mstcn.pth.tar
+----------
+Epoch 0/0
+Current learning rate: 0.0003
+[   32/ 5959 (0%)]	Loss: 1.6948	Acc:0.7665	Cost time:38.875 (38.875)s	Data time:30.208 (30.208)	Instances per second: 0.82
+[ 1632/ 5959 (27%)]	Loss: 0.6190	Acc:0.8487	Cost time:0.557 (1.456)s	Data time:0.000 (0.594)	Instances per second: 21.98
+[ 3232/ 5959 (54%)]	Loss: 0.5477	Acc:0.8587	Cost time:0.542 (1.008)s	Data time:0.000 (0.301)	Instances per second: 31.76
+[ 4832/ 5959 (81%)]	Loss: 0.5557	Acc:0.8483	Cost time:0.572 (0.858)s	Data time:0.000 (0.202)	Instances per second: 37.29
+[ 5959/ 5959 (100%)]	Loss: 0.5494	Acc:0.8450	Cost time:0.979 (0.812)s	Data time:0.000 (0.163)	Instances per second: 39.43
+val Epoch:	 0	Loss val: 0.0597	Acc val:0.9867, LR: 0.0003
