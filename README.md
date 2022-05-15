@@ -1,13 +1,13 @@
 # Lipreading using Temporal Convolutional Networks
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/towards-practical-lipreading-with-distilled/lipreading-on-lip-reading-in-the-wild)](https://paperswithcode.com/sota/lipreading-on-lip-reading-in-the-wild?p=towards-practical-lipreading-with-distilled)
-## Authors
-[Pingchuan Ma](https://mpc001.github.io/), [Brais Martinez](http://braismartinez.org), [Stavros Petridis](https://ibug.doc.ic.ac.uk/people/spetridis), [Maja Pantic](https://ibug.doc.ic.ac.uk/people/mpantic).
+I have worked in this project as part of my final year project. This is project use LRW dataset on a single word prediction on 500 classes. This model can be trained from scratch.
 
-## Update
+I have used Windows OS with Nvidia GeForce RTX 3070 GPU for the training. There are couple of point added to run it on windows os alongside a wonderful documentation from the original authors shown below.
+1. Conda environment is recommended as some of the libraries conflicts or at least conflicted during my work with virtualenv
+2. while providing path use "\\" not "\" or use "/".
+3. During preprocessing i had reuse couple of files twice as their .txt file were missing and preprocessing doesn't work properly if there is any missing index sequence in the files.
+4. I have changed "queue-length" to 25 instead of 30 as i wanted to test existing test video files.
+5. There were a conflict of device during running the prediction file, hence change default device to 'cpu' which solved the problem.
 
-`2021-06-09`: We have released our official training code, see [here](#how-to-train).
-
-`2020-12-08`: We have released the audio-only model which achieves the testing accuracy of 98.5% on LRW.
 
 ## Content
 [Deep Lipreading](#deep-lipreading)
@@ -30,24 +30,6 @@
 
 
 ## Deep Lipreading
-### Introduction
-
-This is the respository of [Towards Practical Lipreading with Distilled and Efficient Models](https://sites.google.com/view/audiovisual-speech-recognition#h.p_f7ihgs_dULaj) and [Lipreading using Temporal Convolutional Networks](https://sites.google.com/view/audiovisual-speech-recognition#h.p_jP6ptilqb75s). In this repository, we provide training code, pre-trained models, network settings for end-to-end visual speech recognition (lipreading). We trained our model on [LRW](http://www.robots.ox.ac.uk/~vgg/data/lip_reading/lrw1.html). The network architecture is based on 3D convolution, ResNet-18 plus MS-TCN.
-
-<div align="center"><img src="doc/pipeline.png" width="640"/></div>
-
-By using this repository, you can achieve a performance of 87.9% on the LRW dataset. This reporsitory also provides a script for feature extraction.
-
-### Preprocessing
-
-As described in [our paper](https://arxiv.org/abs/2001.08702), each video sequence from the LRW dataset is processed by 1) doing face detection and face alignment, 2) aligning each frame to a reference mean face shape 3) cropping a fixed 96 × 96 pixels wide ROI from the aligned face image so that the mouth region is always roughly centered on the image crop 4) transform the cropped image to gray level.
-
-You can run the pre-processing script provided in the [preprocessing](./preprocessing) folder to extract the mouth ROIs.
-
-<table style="display: inline-table;">  
-<tr><td><img src="doc/demo/original.gif", width="144"></td><td><img src="doc/demo/detected.gif" width="144"></td><td><img src="doc/demo/transformed.gif" width="144"></td><td><img src="doc/demo/cropped.gif" width="144"></td></tr>
-<tr><td>0. Original</td> <td>1. Detection</td> <td>2. Transformation</td> <td>3. Mouth ROIs</td> </tr>
-</table>
 
 ### How to install environment
 
